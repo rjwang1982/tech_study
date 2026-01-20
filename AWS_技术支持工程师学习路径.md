@@ -1862,13 +1862,9 @@ graph TB
 
 ### YouTube 频道
 
-- 🔗 [AWS Online Tech Talks](https://www.youtube.com/c/AWSOnlineTechTalks) - AWS 官方技术讲座
-- 🔗 [AWS Events](https://www.youtube.com/c/AWSEventsChannel) - AWS 活动录像
-- 🔗 [freeCodeCamp.org](https://www.youtube.com/c/Freecodecamp) - 免费 AWS 完整课程
-- 🔗 [TechWorld with Nana](https://www.youtube.com/c/TechWorldwithNana) - DevOps 和云技术
-- 🔗 [Stephane Maarek](https://www.youtube.com/c/StephaneMaarek) - AWS 认证课程
-- 🔗 [Be A Better Dev](https://www.youtube.com/c/BeABetterDev) - AWS 教程
-- 🔗 [AWS 中文频道](https://www.youtube.com/@AWSChinese) - 中文技术内容
+- 🔗 [AWS Events](https://www.youtube.com/@AWSEventsChannel) - AWS 官方活动和技术讲座录像
+- 🔗 [freeCodeCamp - AWS 课程](https://www.youtube.com/@freecodecamp/search?query=aws) - 多个免费 AWS 认证和实战课程
+- 🔗 [TechWorld with Nana](https://www.youtube.com/@TechWorldwithNana) - DevOps 和云技术教程
 
 ---
 
