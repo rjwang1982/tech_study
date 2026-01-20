@@ -1,9 +1,14 @@
+<div align="right">
+  <img src="./vstecslog.png" alt="VSTECS Logo" width="300"/>
+</div>
+
 # AWS 技术支持工程师学习路径
 
 **作者**: RJ.Wang  
-**邮箱**: wangrenjun@gmail.com  
-**创建时间**: 2025-01-19  
-**版本**: v1.0
+**邮箱**: renjun.wang@vstecs.com  
+**创建时间**: 2026-01-19  
+**最后更新**: 2026-01-20  
+**版本**: v1.1
 
 ---
 
@@ -279,7 +284,6 @@ graph TB
 - 🎓 [计算机网络微课堂 - B站](https://www.bilibili.com/video/BV1c4411d7jb/) - 配套视频教程
 - 🔗 [IP 地址计算器](https://tool.chinaz.com/tools/subnetmask) - 站长工具
 - 📚 [AWS VPC 用户指南（中文）](https://docs.aws.amazon.com/zh_cn/vpc/latest/userguide/) - AWS 官方文档
-- 📖 [《TCP/IP 详解 卷1》](https://book.douban.com/subject/1088054/) - 深入学习参考（英文原版更佳）
 
 ---
 
@@ -807,11 +811,7 @@ flowchart LR
 #### 📚 推荐资源
 - 📚 [AWS 应用程序迁移服务文档（中文）](https://docs.aws.amazon.com/zh_cn/mgn/)
 - 📚 [AWS 数据库迁移服务文档（中文）](https://docs.aws.amazon.com/zh_cn/dms/)
-- 📖 [《云迁移实战》](https://book.douban.com/subject/35194323/)
-- 🎓 [AWS 迁移中心](https://aws.amazon.com/cn/migration-hub/)
 - 🎓 [AWS 迁移加速计划（MAP）](https://aws.amazon.com/cn/migration-acceleration-program/)
-- 📺 [AWS 云迁移实战 - B站](https://www.bilibili.com/video/BV1YK4y1s7Qg/)
-- 🔗 [AWS 迁移工具](https://aws.amazon.com/cn/products/migration-and-transfer/)
 
 ---
 
@@ -861,14 +861,14 @@ graph TB
 **网络安全**
 ```mermaid
 flowchart TB
-    Internet[🌐 Internet] --> WAF[🛡️ WAF防护]
-    WAF --> Shield[🔰 Shield DDoS防护]
-    Shield --> CloudFront[📡 CloudFront]
+    Internet[🌐 Internet] --> Shield[🔰 Shield DDoS防护]
+    Shield --> WAF[🛡️ WAF防护]
+    WAF --> CloudFront[📡 CloudFront]
     CloudFront --> ALB[⚖️ ALB]
     
-    ALB --> SG[🔒 安全组]
-    SG --> NACL[📋 网络ACL]
-    NACL --> EC2[🖥️ EC2实例]
+    ALB --> NACL[📋 网络ACL]
+    NACL --> SG[🔒 安全组]
+    SG --> EC2[🖥️ EC2实例]
     
     EC2 --> Inspector[🔍 Inspector扫描]
     EC2 --> GuardDuty[👁️ GuardDuty威胁检测]
@@ -878,8 +878,8 @@ flowchart TB
     classDef compute fill:#4caf50,stroke:#1b5e20
     classDef security fill:#f44336,stroke:#b71c1c
     
-    class WAF,Shield,CloudFront edge
-    class ALB,SG,NACL network
+    class Shield,WAF,CloudFront edge
+    class ALB,NACL,SG network
     class EC2 compute
     class Inspector,GuardDuty security
 ```
@@ -910,7 +910,6 @@ flowchart TB
 #### 📚 推荐资源
 - 📚 [AWS 安全最佳实践（中文）](https://docs.aws.amazon.com/zh_cn/security/)
 - 📚 [AWS IAM 用户指南（中文）](https://docs.aws.amazon.com/zh_cn/iam/)
-- 📖 [《AWS 云安全》](https://book.douban.com/subject/35194324/)
 - 🎓 [AWS 安全学习路径](https://aws.amazon.com/cn/training/learn-about/security/)
 - 🎓 [阿里云安全白皮书](https://www.alibabacloud.com/zh/trust-center/security) - 参考学习
 - 📺 [AWS 安全实战 - B站](https://www.bilibili.com/video/BV1aK4y1s7Qm/)
@@ -1033,7 +1032,6 @@ graph TB
 #### 📚 推荐资源
 - 📚 [AWS 灾难恢复白皮书（中文）](https://docs.aws.amazon.com/zh_cn/whitepapers/latest/disaster-recovery-workloads-on-aws/)
 - 📚 [AWS Backup 用户指南（中文）](https://docs.aws.amazon.com/zh_cn/aws-backup/)
-- 📖 [《高可用架构》](https://book.douban.com/subject/26999645/)
 - 🎓 [AWS 灾备解决方案](https://aws.amazon.com/cn/disaster-recovery/)
 - 🎓 [AWS 弹性架构设计](https://aws.amazon.com/cn/architecture/well-architected/)
 - 📺 [AWS 高可用架构设计 - B站](https://www.bilibili.com/video/BV1NK4y1s7Qp/)
@@ -1828,95 +1826,11 @@ graph TB
 - [AWS 中国区文档](https://docs.amazonaws.cn/) - 中国区域专用文档
 
 #### AWS Training
-- [AWS Skill Builder](https://skillbuilder.aws/) - 免费在线学习平台（500+ 免费课程）
-- [AWS Training and Certification](https://aws.amazon.com/training/) - 官方培训和认证
-- [AWS Workshops](https://workshops.aws/) - 实战工作坊
-- [AWS Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/) - 动手实验教程
-- [AWS Builder Labs](https://aws.amazon.com/training/digital/aws-builder-labs/) - 实验室环境
-
----
-
-### 在线课程平台
-
-#### A Cloud Guru
-- 🔗 [官网](https://acloudguru.com/)
-- 全面的 AWS 课程
-- 实验环境
-- 认证备考课程
-- 推荐指数：⭐⭐⭐⭐⭐
-
-#### Udemy
-- 🔗 [Stephane Maarek - AWS 认证课程](https://www.udemy.com/user/stephane-maarek/)
-- 🔗 [AWS Certified Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/)
-- 🔗 [AWS Certified Developer Associate](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
-- 性价比高
-- 定期更新
-- 推荐指数：⭐⭐⭐⭐⭐
-
-#### Coursera
-- 🔗 [AWS Fundamentals Specialization](https://www.coursera.org/specializations/aws-fundamentals)
-- 🔗 [AWS Cloud Solutions Architect](https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect)
-- AWS 官方课程
-- 大学合作课程
-- 专项课程
-- 推荐指数：⭐⭐⭐⭐
-
-#### Pluralsight
-- 🔗 [AWS 学习路径](https://www.pluralsight.com/paths/aws-certified-solutions-architect-associate)
-- 技术深度课程
-- 技能评估
-- 推荐指数：⭐⭐⭐⭐
-
----
-
-### 书籍推荐
-
-#### 基础入门
-- 📖 [《AWS 云计算实战》(Amazon Web Services in Action)](https://www.manning.com/books/amazon-web-services-in-action-second-edition)
-- 📖 [《AWS 系统管理员学习指南》(AWS Certified SysOps Administrator Study Guide)](https://www.wiley.com/en-us/AWS+Certified+SysOps+Administrator+Study+Guide-p-9781119377429)
-- 📖 [《AWS 认证解决方案架构师学习指南》(AWS Certified Solutions Architect Study Guide)](https://www.wiley.com/en-us/AWS+Certified+Solutions+Architect+Study+Guide-p-9781119713081)
-
-#### 进阶提升
-- 📖 [《AWS Lambda 实战》(AWS Lambda in Action)](https://www.manning.com/books/aws-lambda-in-action)
-- 📖 [《Kubernetes 权威指南》](https://book.douban.com/subject/26902153/)
-- 📖 [《DevOps 实践指南》(The DevOps Handbook)](https://itrevolution.com/product/the-devops-handbook/)
-- 📖 [《Site Reliability Engineering》](https://sre.google/books/) - Google SRE 系列（免费在线）
-
-#### 架构设计
-- 📖 [《架构即未来》(The Art of Scalability)](https://theartofscalability.com/)
-- 📖 [《微服务设计》(Building Microservices)](https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/)
-- 📖 [《分布式系统原理与范型》](https://book.douban.com/subject/3108801/)
-- 📖 [《设计数据密集型应用》(Designing Data-Intensive Applications)](https://dataintensive.net/)
-
----
-
-### 实验环境
-
-#### AWS Free Tier
-- 🔗 [AWS 免费套餐](https://aws.amazon.com/free/)
-- 🔗 [AWS 中国区免费套餐](https://www.amazonaws.cn/free/)
-- 12 个月免费套餐
-- 永久免费服务
-- 试用服务
-
-#### Qwiklabs
-- 🔗 [Qwiklabs 官网](https://www.qwiklabs.com/)
-- 🔗 [Google Cloud Skills Boost](https://www.cloudskillsboost.google/)
-- 实验室环境
-- 真实 AWS 账户
-- 按需付费
-
-#### CloudAcademy
-- 🔗 [CloudAcademy 官网](https://cloudacademy.com/)
-- 实验环境
-- 学习路径
-- 技能评估
-
-#### Instruqt
-- 🔗 [Instruqt 平台](https://instruqt.com/)
-- 交互式实验
-- 真实环境
-- 免费和付费课程
+- [AWS Skill Builder](https://skillbuilder.aws/) - 免费在线学习平台（500+ 免费课程），AWS 官方推出，包含互动式学习、实验室练习和技能评估，支持中文界面
+- [AWS Training and Certification](https://aws.amazon.com/training/) - 官方培训和认证体系入口，提供讲师指导的课堂培训、在线培训和认证考试信息
+- [AWS Workshops](https://workshops.aws/) - 实战工作坊，由 AWS 专家设计的实战项目集合，提供完整的动手实验环境和详细步骤
+- [AWS Hands-on Tutorials](https://aws.amazon.com/getting-started/hands-on/) - 动手实验教程，面向初学者的分步指导，每个教程约 10-30 分钟，大部分在免费套餐范围内可完成
+- [AWS Builder Labs](https://aws.amazon.com/training/digital/aws-builder-labs/) - 实验室环境，提供真实的 AWS 环境进行实践，无需自己的 AWS 账户即可学习
 
 ---
 
@@ -1946,31 +1860,8 @@ graph TB
 
 ---
 
-### 练习题库
-
-#### 认证考试
-- 🔗 [Tutorials Dojo](https://tutorialsdojo.com/) - 推荐 ⭐⭐⭐⭐⭐
-  - 高质量练习题
-  - 详细解析
-  - 模拟考试
-- 🔗 [Whizlabs](https://www.whizlabs.com/aws-certifications/)
-  - 全面的题库
-  - 实验环境
-  - 视频课程
-- 🔗 [AWS 官方练习题](https://aws.amazon.com/certification/certification-prep/)
-  - 官方样题
-  - 免费和付费选项
-- 🔗 [ExamTopics](https://www.examtopics.com/exams/amazon/)
-  - 社区贡献题库
-  - 免费访问
-  - 讨论区
-- 🔗 [AWS Skill Builder - 官方练习考试](https://explore.skillbuilder.aws/learn/course/external/view/elearning/9153/aws-certification-official-practice-question-sets-english)
-
----
-
 ### YouTube 频道
 
-#### 推荐频道
 - 🔗 [AWS Online Tech Talks](https://www.youtube.com/c/AWSOnlineTechTalks) - AWS 官方技术讲座
 - 🔗 [AWS Events](https://www.youtube.com/c/AWSEventsChannel) - AWS 活动录像
 - 🔗 [freeCodeCamp.org](https://www.youtube.com/c/Freecodecamp) - 免费 AWS 完整课程
@@ -1981,39 +1872,6 @@ graph TB
 
 ---
 
-### 技术会议
-
-#### AWS re:Invent
-- 🔗 [AWS re:Invent 官网](https://reinvent.awsevents.com/)
-- 🔗 [历年 re:Invent 视频](https://www.youtube.com/results?search_query=aws+reinvent)
-- 年度最大技术大会（每年 11-12 月，拉斯维加斯）
-- 新服务发布
-- 技术分享
-- 实战工作坊
-
-#### AWS Summit
-- 🔗 [AWS Summit 官网](https://aws.amazon.com/events/summits/)
-- 🔗 [AWS Summit 中国](https://aws.amazon.com/cn/events/summits/)
-- 区域性技术峰会
-- 本地化内容
-- 免费参加
-
-#### AWS Community Day
-- 🔗 [AWS Community Day](https://aws.amazon.com/developer/community/community-day/)
-- 社区驱动活动
-- 本地技术分享
-- 免费参加
-
----
-
-## 📞 联系方式
-
-**作者**: RJ.Wang  
-**邮箱**: wangrenjun@gmail.com  
-**创建时间**: 2025-01-19  
-**最后更新**: 2025-01-19
-
----
-
 **祝你学习顺利，早日成为优秀的 AWS 技术支持工程师！** 🚀
+
 
