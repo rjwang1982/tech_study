@@ -7,7 +7,7 @@
 **作者**: RJ.Wang  
 **邮箱**: renjun.wang@vstecs.com  
 **创建时间**: 2026-01-19  
-**最后更新**: 2026-01-20  
+**最后更新**: 2026-01-21  
 **版本**: v1.3
 
 ---
@@ -1817,8 +1817,6 @@ graph TB
 - [AWS 文档中心](https://docs.aws.amazon.com/) - 所有服务的官方文档
 - [AWS 架构中心](https://aws.amazon.com/architecture/) - 参考架构和最佳实践
 - [AWS 白皮书](https://aws.amazon.com/whitepapers/) - 技术白皮书和指南
-- [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) - 架构设计框架
-- [AWS 中国区文档](https://docs.amazonaws.cn/) - 中国区域专用文档
 
 #### AWS Training
 - [AWS Skill Builder](https://skillbuilder.aws/) - 免费在线学习平台（500+ 免费课程），AWS 官方推出，包含互动式学习、实验室练习和技能评估，支持中文界面
@@ -1832,26 +1830,24 @@ graph TB
 ### 社区资源
 
 #### 技术博客
-- 🔗 [AWS 官方博客](https://aws.amazon.com/blogs/)
-- 🔗 [AWS 架构博客](https://aws.amazon.com/blogs/architecture/)
-- 🔗 [AWS 安全博客](https://aws.amazon.com/blogs/security/)
-- 🔗 [AWS 中国博客](https://aws.amazon.com/cn/blogs/china/)
-- 🔗 [AWS News Blog](https://aws.amazon.com/blogs/aws/)
-- 🔗 [AWS Compute Blog](https://aws.amazon.com/blogs/compute/)
+- 🔗 [AWS 官方博客](https://aws.amazon.com/blogs/) - AWS 官方技术博客，涵盖所有服务的最新动态、最佳实践和技术深度文章
+- 🔗 [AWS 架构博客](https://aws.amazon.com/blogs/architecture/) - 专注于架构设计模式、参考架构和解决方案架构的深度文章
+- 🔗 [AWS 安全博客](https://aws.amazon.com/blogs/security/) - 安全最佳实践、合规性指南和安全服务使用技巧
+- 🔗 [AWS 中国博客](https://aws.amazon.com/cn/blogs/china/) - 中文技术博客，包含本地化内容和中国区特定的技术文章
+- 🔗 [AWS News Blog](https://aws.amazon.com/blogs/aws/) - AWS 新服务发布、功能更新和重要公告的第一手资讯
+- 🔗 [AWS Compute Blog](https://aws.amazon.com/blogs/compute/) - 计算服务（EC2、Lambda、容器等）的深度技术文章和使用案例
 
 #### 技术论坛
-- 🔗 [AWS re:Post](https://repost.aws/) - AWS 官方问答社区
-- 🔗 [Stack Overflow - AWS 标签](https://stackoverflow.com/questions/tagged/amazon-web-services)
-- 🔗 [Reddit r/aws](https://www.reddit.com/r/aws/)
-- 🔗 [AWS 开发者论坛](https://forums.aws.amazon.com/)
-- 🔗 [ServerFault - AWS 问题](https://serverfault.com/questions/tagged/amazon-web-services)
+- 🔗 [AWS re:Post](https://repost.aws/) - AWS 官方问答社区，可以提问并获得 AWS 专家和社区成员的解答
+- 🔗 [Stack Overflow - AWS 标签](https://stackoverflow.com/questions/tagged/amazon-web-services) - 全球最大的开发者问答平台，AWS 相关问题活跃度高，解答质量好
+- 🔗 [ServerFault - AWS 问题](https://serverfault.com/questions/tagged/amazon-web-services) - 专注于系统管理和运维的问答社区，适合基础设施相关问题
 
 #### 开源项目
-- 🔗 [AWS Samples](https://github.com/aws-samples) - AWS 官方示例代码
-- 🔗 [AWS Labs](https://github.com/awslabs) - AWS 实验室项目
-- 🔗 [Awesome AWS](https://github.com/donnemartin/awesome-aws) - AWS 资源精选列表
-- 🔗 [AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples)
-- 🔗 [Terraform AWS Modules](https://github.com/terraform-aws-modules)
+- 🔗 [AWS Samples](https://github.com/aws-samples) - AWS 官方示例代码仓库，包含各种服务的完整示例和最佳实践代码
+- 🔗 [AWS Labs](https://github.com/awslabs) - AWS 实验室项目，包含创新性工具和实验性功能的开源实现
+- 🔗 [Awesome AWS](https://github.com/donnemartin/awesome-aws) - 精心整理的 AWS 资源列表，包含库、工具、指南等优质资源
+- 🔗 [AWS CDK Examples](https://github.com/aws-samples/aws-cdk-examples) - AWS CDK 示例代码集合，涵盖多种编程语言和常见使用场景
+- 🔗 [Terraform AWS Modules](https://github.com/terraform-aws-modules) - 高质量的 Terraform AWS 模块库，可直接用于生产环境
 
 ---
 
