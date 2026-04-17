@@ -2,9 +2,9 @@
 
 # MicroStrategy 中国区业务概述
 
-**作者**: RJ.Wang | 高级工程师
-**公司**: 伟仕佳杰 (VSTECS) | AWS Partner
-**邮箱**: renjun.wang@vstecs.com
+**作者**: RJ.Wang | 高级工程师<br>
+**公司**: 伟仕佳杰 (VSTECS) | AWS Partner<br>
+**邮箱**: renjun.wang@vstecs.com<br>
 **更新日期**: 2026-04-17
 
 ---
